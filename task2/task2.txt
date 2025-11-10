@@ -1,0 +1,17 @@
+
+
+Task 2 :
+An HR department wants to automatically adjust employee salaries based on their performance rating.
+Create a list of dictionaries with employee data like:
+employees = [
+    {"name": "Ali", "salary": 60000, "rating": 4.7},
+    {"name": "Sara", "salary": 50000, "rating": 3.2},
+    {"name": "John", "salary": 70000, "rating": 4.9}
+]
+Write a Python program that:
+Increases salary by:
+10% if rating ≥ 4.5
+5% if rating ≥ 4.0
+0% otherwise
+Prints old and new salaries for each employee in a clean format.
+Saves the updated list into a new JSON file named updated_salaries.json.
