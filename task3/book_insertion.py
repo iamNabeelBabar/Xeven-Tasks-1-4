@@ -67,25 +67,3 @@ def show_books():
             conn.close()
 
 show_books()
-
-
-
-def borrow_book():
-    conn = None
-    cur = None
-    
-    try:
-        
-        conn, cur = get_connection()
-        
-        book_title = input("Enter book name: ")
-        
-        #query to set available to false
-        
-        sql_query = "UPDATE books SET available = FALSE WHERE title = %s AND available = TRUE"
-        
-        cur.execute(sql_query, (book_title,))
-        
-        conn.commit()
-        
-        
