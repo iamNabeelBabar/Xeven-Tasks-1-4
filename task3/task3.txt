@@ -1,0 +1,16 @@
+
+Task 3: *Library Management System*
+You are building a small system for a local library.
+Create a table named books:
+CREATE TABLE books (
+  book_id SERIAL PRIMARY KEY,
+  title VARCHAR(100),
+  author VARCHAR(100),
+  available BOOLEAN
+);
+Using Python and psycopg2 (or any connector):
+Insert 5 sample books.
+Write a function to borrow a book (set available = FALSE based on title).
+Write another function to return a book (set available = TRUE).
+Fetch and print all books that are currently available.
+Bonus: Handle cases where the book title doesn’t exist (print a friendly message).

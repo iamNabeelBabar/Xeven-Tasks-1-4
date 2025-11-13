@@ -1,0 +1,20 @@
+
+Task 1 :
+
+** File Analyzer** 
+
+You are working for a data company that receives multiple .txt files daily containing user feedback. You need to process one file and generate insights.
+Requirements:
+
+Write a Python program that:
+Reads a text file named feedback.txt.
+Counts how many total words, unique words, and sentences are in the file.
+Finds and prints the top 5 most frequent words (ignoring case and punctuation).
+*Saves the output in a file named report.json with the following format*
+example :
+{
+  "total_words": 1250,
+  "unique_words": 430,
+  "sentences": 55,
+  "top_words": ["good", "service", "fast", "recommend", "price"]
+}

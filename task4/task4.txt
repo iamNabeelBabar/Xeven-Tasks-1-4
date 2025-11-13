@@ -1,0 +1,23 @@
+Task 4: *Customer Order Management*:
+You are developing a backend service for a small online store that tracks customer orders.
+Create two tables:
+CREATE TABLE customers (
+  customer_id SERIAL PRIMARY KEY,
+  name VARCHAR(50),
+  email VARCHAR(100)
+);
+
+CREATE TABLE orders (
+  order_id SERIAL PRIMARY KEY,
+  customer_id INT REFERENCES customers(customer_id),
+  product_name VARCHAR(100),
+  amount DECIMAL(10,2)
+);
+Using Python:
+Insert 3 customers and some orders for each.
+Write a function to:
+Get total order amount per customer (using JOIN).
+Display output like:
+Customer: Ali - Total Orders: 4500.00
+Customer: Sara - Total Orders: 2300.50
+Write another function to update an order’s amount and delete an order by order_id.
