@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 <div align="center">
 
 # 📚 Library Management System API
